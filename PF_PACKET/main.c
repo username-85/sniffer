@@ -51,7 +51,7 @@ int main(void)
 
 	term_init();
 
-	unsigned char *buf = (unsigned char *)malloc(PACKET_BUFSIZE);
+	unsigned char *buf = malloc(PACKET_BUFSIZE);
 	if (!buf)
 		fail_exit("Error. malloc");
 
